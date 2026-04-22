@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1A1A1A;
+  background: white;
+}
+
+.aw-input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #D1D5DB;
+  border-radius: 0.25rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.15s;
+  background: white;
+  color: #1A1A1A;
+  font-family: 'Inter', sans-serif;
+}
+.aw-input:focus {
+  border-color: #0F3A7A;
+  box-shadow: 0 0 0 3px #EFF4FB;
+}
+
+.aw-btn-yellow {
+  background: #FFE81A;
+  color: #0F3A7A;
+  padding: 0.9rem 2rem;
+  font-weight: 800;
+  font-size: 0.95rem;
+  border-radius: 2px;
+  transition: all 0.15s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  letter-spacing: -0.01em;
+}
+.aw-btn-yellow:hover:not(:disabled) { background: #F5D800; }
+.aw-btn-yellow:disabled { background: #E5E7EB; color: #9CA3AF; cursor: not-allowed; }
+
+.aw-btn-blue {
+  background: #0F3A7A;
+  color: white;
+  padding: 0.85rem 1.75rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 2px;
+  transition: all 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.aw-btn-blue:hover:not(:disabled) { background: #0B2E62; }
+.aw-btn-blue:disabled { background: #D1D5DB; cursor: not-allowed; }
+
+.aw-admin-title {
+  color: #0F3A7A;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
