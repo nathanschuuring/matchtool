@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { Lock } from 'lucide-react';
 import { AwLogo } from '@/components/PublicLayout';
 
@@ -9,9 +9,17 @@ export default function LoginPage() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [redirectTo, setRedirectTo] = useState('/admin');
   const router = useRouter();
-  const params = useSearchParams();
-  const from = params.get('from') || '/admin';
+
+  // Lees de "from" query parameter client-side (vermijdt useSearchParams suspense-issue)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const from = params.get('from');
+      if (from) setRedirectTo(from);
+    }
+  }, []);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -30,7 +38,7 @@ export default function LoginPage() {
         throw new Error(body.error || 'Inloggen mislukt');
       }
 
-      router.push(from);
+      router.push(redirectTo);
       router.refresh();
     } catch (e: any) {
       setError(e.message);
