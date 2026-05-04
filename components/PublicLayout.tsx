@@ -49,24 +49,6 @@ export function PublicHeader() {
         <Link href="/">
           <AwLogo inverted />
         </Link>
-        <nav className="hidden lg:flex gap-7 text-sm font-bold text-white">
-          <Link href="/" className="flex items-center gap-1 hover:opacity-80">
-            Vacatures <ChevronDown className="w-3 h-3" />
-          </Link>
-          <span className="flex items-center gap-1 cursor-pointer hover:opacity-80">
-            Zzp <ChevronDown className="w-3 h-3" />
-          </span>
-          <span className="flex items-center gap-1 cursor-pointer hover:opacity-80">
-            Werkzoekenden <ChevronDown className="w-3 h-3" />
-          </span>
-          <span className="flex items-center gap-1 cursor-pointer hover:opacity-80">
-            Werkgevers <ChevronDown className="w-3 h-3" />
-          </span>
-          <span className="flex items-center gap-1 cursor-pointer hover:opacity-80">
-            Over ons <ChevronDown className="w-3 h-3" />
-          </span>
-          <span className="cursor-pointer hover:opacity-80">Contact</span>
-        </nav>
         <div className="flex items-center gap-2">
           <button
             className="text-sm font-bold px-4 py-2 flex items-center gap-1.5"
