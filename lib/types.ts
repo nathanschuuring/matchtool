@@ -20,6 +20,15 @@ export type Vacancy = {
   published: boolean;
 };
 
+export type ApplicationStatus = 'Nieuw' | 'In behandeling' | 'Aangenomen' | 'Afgewezen';
+
+export const APPLICATION_STATUSES: ApplicationStatus[] = [
+  'Nieuw',
+  'In behandeling',
+  'Aangenomen',
+  'Afgewezen',
+];
+
 export type Application = {
   id: string;
   created_at?: string;
@@ -39,4 +48,6 @@ export type Application = {
   motivation?: string;
   cv_url?: string;
   cv_filename?: string;
+  status?: ApplicationStatus;
+  status_updated_at?: string;
 };
