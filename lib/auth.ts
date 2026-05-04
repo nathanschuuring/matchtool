@@ -1,7 +1,7 @@
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 
-const COOKIE_NAME = 'matchtool_auth';
+const COOKIE_NAME = 'activework_auth';
 
 function getToken(): string {
   // Gebruik het admin-wachtwoord als "token" — simpel maar voldoende voor deze tool

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const COOKIE_NAME = 'matchtool_auth';
+const COOKIE_NAME = 'activework_auth';
 
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;

@@ -68,7 +68,7 @@ export default function LoginPage() {
             className="text-2xl font-black text-center mb-1"
             style={{ color: '#0F3A7A', letterSpacing: '-0.02em' }}
           >
-            Matchtool
+            ActiveWork
           </h1>
           <p className="text-sm text-center text-gray-600 mb-6">Log in om beheer te openen</p>
 

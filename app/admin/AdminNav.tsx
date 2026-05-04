@@ -38,7 +38,7 @@ export default function AdminNav() {
             className="hidden md:inline-block text-xs font-bold px-2 py-0.5 rounded"
             style={{ background: '#0F3A7A', color: '#FFE81A' }}
           >
-            MATCHTOOL
+            ACTIVEWORK
           </span>
         </div>
         <nav className="flex items-center gap-1">

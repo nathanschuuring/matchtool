@@ -44,7 +44,7 @@ export default function SettingsPage() {
     <div className="max-w-3xl mx-auto">
       <div className="mb-8">
         <h1 className="text-4xl font-black aw-admin-title">Instellingen</h1>
-        <p className="mt-1 text-gray-600">Configuratie van je Matchtool</p>
+        <p className="mt-1 text-gray-600">Configuratie van je ActiveWork</p>
       </div>
 
       <div className="space-y-6">
@@ -91,7 +91,7 @@ export default function SettingsPage() {
                 Automatisering (Zapier / Make / n8n)
               </h3>
               <p className="text-sm text-gray-600">
-                Wanneer iemand solliciteert, stuurt de Matchtool een webhook zodat je in Gmail + Trello
+                Wanneer iemand solliciteert, stuurt de ActiveWork een webhook zodat je in Gmail + Trello
                 een melding krijgt.
               </p>
             </div>
@@ -145,7 +145,7 @@ export default function SettingsPage() {
                 </div>
               </li>
               <li>
-                Doe in de Matchtool een test-sollicitatie om de velden in Zapier te mappen.
+                Doe in ActiveWork een test-sollicitatie om de velden in Zapier te mappen.
               </li>
               <li>Activeer de Zap. Klaar!</li>
             </ol>
