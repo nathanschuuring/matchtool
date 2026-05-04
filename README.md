@@ -1,6 +1,6 @@
 # Matchtool — Actief Werkt!
 
-Een complete vacature en sollicitatiebeheertool in de huisstijl van Actief Werkt!.
+Een complete vacature- en sollicitatiebeheertool in de huisstijl van Actief Werkt!.
 
 ## ✨ Wat doet het?
 
