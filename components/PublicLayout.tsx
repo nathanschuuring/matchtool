@@ -50,12 +50,13 @@ export function PublicHeader() {
           <AwLogo inverted />
         </Link>
         <div className="flex items-center gap-2">
-          <button
-            className="text-sm font-bold px-4 py-2 flex items-center gap-1.5"
+          <Link
+            href="/admin/login"
+            className="text-sm font-bold px-4 py-2 flex items-center gap-1.5 hover:opacity-90 transition"
             style={{ background: 'white', color: '#0F3A7A', borderRadius: '4px' }}
           >
             <User className="w-4 h-4" /> Inloggen
-          </button>
+          </Link>
           <button
             className="text-sm font-bold px-4 py-2"
             style={{ background: '#FFE81A', color: '#0F3A7A', borderRadius: '4px' }}
